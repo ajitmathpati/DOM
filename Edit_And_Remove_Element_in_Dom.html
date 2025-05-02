@@ -1,0 +1,38 @@
+<!-- //Edit Remove Element In Dom -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code Is AJIT</title>
+</head>
+
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>Java Script</li>
+
+    </ul>
+
+</body>
+<script>
+    function AddLanguage(language) {
+        const li = document.createElement('li');
+        li.innerHTML = `${language}`
+        document.querySelector('.language').appendChild(li)
+    }
+    AddLanguage("python");
+    AddLanguage("java");
+    AddLanguage("sql");
+    AddLanguage(".net");
+
+    function Addoptilanguage(language) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    Addoptilanguage("ajit");
+</script>
+
+</html>
