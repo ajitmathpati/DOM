@@ -9,7 +9,7 @@
 </head>
 
 <body style="background-color: black;color: white;">
-    <div class="parent">
+    <div class="p">
         <div class="day">mon</div>
         <div class="day">tue</div>
         <div class="day">wed</div>
@@ -18,30 +18,55 @@
 
 </body>
 <script>
-    const parent = document.querySelector('.parent')
-    console.log(parent.children);
+    const parent = document.querySelector('.p')
+    // console.log(parent.children);
+    // console.log(
+    //     parent.children[1].innerHTML
+
+
+    // );
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(
+    //         parent.children[i].innerHTML
+
+    //     );
+    //     parent.children[i].style.color = "red";
+    //     parent.children[i].style.padding = "20px"
+    //     parent.children[i].style.border = " 2px solid white"
+    //     parent.children[i].style.marginTop = "20px"
+    //     parent.children[i].style.borderRadius = "20px"
+    //     parent.children[i].style.backgroundColor = "white"
+    //     parent.children[i].style.fontSize = "20px"
+    //     parent.children[i].style.fontFamily = "Arial"
+    //     parent.children[i].style.boxShadow = "inset 5px 5px 10px"
+
+    // }
+
+    // <!-- fisrtElementchild property-->
+    // console.log(
+    //     parent.firstElementChild.innerHTML
+
+    // );
+    // console.log(
+    //     parent.lastElementChild.textContent
+    // );
+    //child throuth access the parent
+    const dayone = document.querySelector('.day')
     console.log(
-        parent.children[1].innerHTML
-
-
+        dayone.innerHTML
     );
+    console.log(
+        dayone.parentElement,
+    );
+    console.log(
+        dayone.nextElementSibling.innerHTML
+    );
+    console.log("nodes",parent.childNodes);
 
-    for (let i = 0; i < parent.children.length; i++) {
-        console.log(
-            parent.children[i].innerHTML
 
-        );
-        parent.children[i].style.color = "red";
-        parent.children[i].style.padding = "20px"
-        parent.children[i].style.border = " 2px solid white"
-        parent.children[i].style.marginTop = "20px"
-        parent.children[i].style.borderRadius = "20px"
-        parent.children[i].style.backgroundColor = "white"
-        parent.children[i].style.fontSize = "20px"
-        parent.children[i].style.fontFamily = "Arial"
-        parent.children[i].style.boxShadow = "inset 5px 5px 10px"
 
-    }
+
 </script>
 
 </html>
