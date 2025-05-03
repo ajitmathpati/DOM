@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Edit_The_Element -->
+</head>
+
+<body>
+    <script>
+        function AddLanguage(language) {
+            const li = document.createElement('li');
+            li.innerHTML = `${language}`
+            document.querySelector('.language').appendChild(li)
+        }
+        AddLanguage("python");
+        AddLanguage("java");
+        AddLanguage("sql");
+        AddLanguage(".net");
+
+        function Addoptilanguage(language) {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(language))
+            document.querySelector('.language').appendChild(li)
+
+        }
+        Addoptilanguage("ajit");
+
+        //edit 
+
+        const secondlang=document.querySelector('li:ntn')
+    </script>
+
+</body>
+
+</html>
