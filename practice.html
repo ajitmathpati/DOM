@@ -4,38 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>how to create Element</title>
-
+    <title>Remove And Edit Element in dom</title>
 </head>
 
-<body style="background-color: black;color: white;">
+<body style="background-color: rgb(45, 40, 40);color: antiquewhite;">
+    <ul class="language">
+        <li>javascript</li>
 
+    </ul>
 </body>
 <script>
-
-    const divEle = document.createElement('div');
-    console.log(divEle);
-    divEle.setAttribute('class', 'my-class');
-    divEle.setAttribute('id', 'my-id')
-    divEle.style.backgroundColor = "yellow";
-    divEle.style.color = "red";
-    divEle.style.padding="20px"
-    divEle.style.borderRadius="15px 50px"
-
-    const text = document.createTextNode('hello i am the best');
-    divEle.appendChild(text)
-    document.body.appendChild(divEle);
+    // function addElement(val) {
+    //     const liEle = document.createElement('li');
+    //     liEle.innerHTML = `${val}`;
+    //     const addvalue = document.querySelector('.language');
+    //     addvalue.appendChild(liEle)
 
 
+    // }
+    // addElement('java');
+    // addElement('python');
+    // addElement('ram');
+    // addElement('amit');
 
+    // const AddElement = (val) => {
+    //     const selector = document.querySelector('.language');
+    //     const liele = document.createElement('li');
+    //     liele.innerHTML = `${val}`;
 
-
-
-
-
+    //     selector.appendChild(liele);
 
 
 
+    // }
+    // AddElement('java');
+    // AddElement('python');
+    // AddElement('ram');
+    // AddElement('amit');
+
+    const optimizemethod = (val) => {
+        const selector = document.querySelector('.language');
+        const li = document.createElement('li');
+        const node = document.createTextNode(val)
+        li.appendChild(node);
+        selector.appendChild(li);
+
+
+    }
+    optimizemethod('python');
+    optimizemethod('ram');
+    optimizemethod('ajit');
+    optimizemethod('sujit');
+
+
+    // const optimizemethod2 = (val) => {
+    //     const selector = document.querySelector('.language');
+    //     const li = document.createElement('li');
+
+    //     li.appendChild(document.createTextNode(val));
+    //     selector.appendChild(li);
+
+
+    // }
+    // optimizemethod2('python');
+    // optimizemethod2('ram');
+    // optimizemethod2('ajit');
+    // optimizemethod2('sujit');
 </script>
 
 </html>
