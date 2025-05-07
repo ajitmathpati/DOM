@@ -4,30 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body {
-        background-color: black;
-        color: aliceblue;
-    }
-</style>
+    <title>how to create Element</title>
 
-<body>
-    <div class="parent">
-        <div class="day">mon</div>
-        <div class="day">tue</div>
-        <div class="day">wed</div>
-        <div class="day">thus</div>
-    </div>
+</head>
+
+<body style="background-color: black;color: white;">
 
 </body>
-<!-- <script>
-    const ajit = document.querySelectorAll('.parent');
-    console.log(ajit);
-    console.log(ajit.children[1]);
+<script>
+
+    const divEle = document.createElement('div');
+    console.log(divEle);
+    divEle.setAttribute('class', 'my-class');
+    divEle.setAttribute('id', 'my-id')
+    divEle.style.backgroundColor = "yellow";
+    divEle.style.color = "red";
+    divEle.style.padding="20px"
+    divEle.style.borderRadius="15px 50px"
+
+    const text = document.createTextNode('hello i am the best');
+    divEle.appendChild(text)
+    document.body.appendChild(divEle);
 
 
-</script> -->
+
+
+
+
+
+
+
+
+
+</script>
 
 </html>
